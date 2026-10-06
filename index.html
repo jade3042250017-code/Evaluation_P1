@@ -1,71 +1,56 @@
-<!DOCTYPE html>
-<html lang="es">
+﻿<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Partial 1 Index - Quality Topics for Software Design</title>
-    <link rel="stylesheet" href="styleIndex.css">
+    <meta charset=utf-8 />
+    <title>PEREZ</title>
+    <link href="Content/style.css" rel="stylesheet" />
 </head>
 <body>
 
-    <main class="card-container">
-        <header class="header">
-            <h1 class="main-title">PARTIAL 1 INDEX</h1>
-            <h2 class="sub-title">QUALITY TOPICS FOR SOFTWARE DESIGN</h2>
-            
-            <div class="logo-wrapper">
-                <img src="utd.png" alt="Logo UTD" class="utd-logo">
-            </div>
+    <a href="../index.html" class="btn-regresar">
+        ⬅️ Regresar al Menú
+    </a>
 
-            <a href="mario-main/index.html" target="_blank" class="mario-btn">
-                🎮 PLAY MARIO
-            </a>
-        </header>
+    <style>
+        .btn-regresar {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            z-index: 99999;
+            background: #0284c7;
+            color: #ffffff;
+            padding: 10px 18px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            border: 2px solid #ffffff;
+            transition: all 0.2s ease;
+        }
 
-        <section class="section-block">
-            <h3 class="section-title">FLOWCHART SECTION</h3>
-            <div class="buttons-group">
-                <a href="diagramaldiea.html" target="_blank" class="btn btn-flow">
-                    <span class="btn-icon">📌</span>
-                    DIAGRAM 1 - MAIN PROCESS
-                </a>
-                <a href="diagram_2.html" target="_blank" class="btn btn-flow">
-                    <span class="btn-icon">👥</span>
-                    DIAGRAM 2 - CLIENTS
-                </a>
-                <a href="diagram3.html" target="_blank" class="btn btn-flow">
-                    <span class="btn-icon">💰</span>
-                    DIAGRAM 3 - MONEY
-                </a>
-            </div>
-        </section>
+        .btn-regresar:hover {
+            background: #0369a1;
+            transform: scale(1.05);
+        }
+    </style>
 
-        <section class="section-block">
-            <h3 class="section-title">USE CASE DIAGRAM SECTION</h3>
-            <div class="buttons-group">
-                <a href="diagramaVenta1.html" target="_blank" class="btn btn-usecase">
-                    <span class="btn-icon">💻</span>
-                    DIAGRAM 1 - PROGRAMMER ACTOR
-                </a>
-                <a href="diagramaMovilidad3.html" target="_blank" class="btn btn-usecase">
-                    <span class="btn-icon">👤</span>
-                    DIAGRAM 2 - USER ACTOR
-                </a>
-                <a href="diagramaBienestar2.html" target="_blank" class="btn btn-usecase">
-                    <span class="btn-icon">🏦</span>
-                    DIAGRAM 3 - BANKER ACTOR
-                </a>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <p class="student-label">STUDENT:</p>
-            <p class="student-name">Jade Idaly Bermúdez González</p>
-
-            <p class="student-label">EMAIL:</p>
-            <p class="student-name">jade_3042250017@utd.edu.mx</p>
-        </footer>
-    </main>
-
+    <div id="game">
+        <div id="world"></div>
+    </div>
+    <div id="coinNumber" class="gauge">0</div>
+    <div id="coin" class="gaugeSprite"></div>
+    <div id="liveNumber" class="gauge">0</div>
+    <div id="live" class="gaugeSprite"></div>
+    </div>
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/SB1VqLQCTFpA?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="Scripts/jquery.js"><\/script>')</script>
+    <script src="Scripts/testlevels.js"></script>
+    <script src="Scripts/oop.js"></script>
+    <script src="Scripts/keys.js"></script>
+    <script src="Scripts/constants.js"></script>
+    <script src="Scripts/main.js"></script>
 </body>
 </html>
